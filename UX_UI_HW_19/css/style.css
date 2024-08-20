@@ -1,0 +1,240 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1497035111255-8bc8464dc267?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: center;
+  background-position: top;
+}
+
+
+h1,h2,h3,h4{ 
+  font-family: "morgy";
+}
+h1{font-size: xx-large;}
+h4{font-size: x-large;}
+p1,p2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header {
+  background-color: #FFEDD2;
+  padding: 0px;
+  font-family: "morgy";
+  font-size: 50px;
+  height: 100px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  float: right;
+  color: #162114;
+}
+
+header li {
+  display: inline-block;
+  padding: 0px 20px;
+
+}
+
+header p {
+  display: inline-block;
+}
+
+.heroImg {
+  padding: 100px 15px;
+
+
+}
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #EB3D00;
+  text-align: center;
+  font-family: "morgy";
+  border-radius: 25px;
+  height: auto
+}
+
+
+
+footer {
+  background-color: #373738;
+  padding: 5px;
+  color: white;
+  border-radius: 25px;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+}
+
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+}
+
+.heading {
+  text-align: center;
+  padding: 15px 5px;
+  font-size: 30px;
+}
+
+/* My UX Skills Section */
+.flexContainer {
+  display: flex;
+  padding: 60px 30px;
+background-color: #FFEDD2;
+border-radius: 25px;
+}
+
+.flexContainer div {
+  width: 60%;
+  padding: 25px;
+}
+
+/* My Work Section */
+.myWork {
+  padding: 60px 30px;
+  padding-top: 0;
+  background-color: #FFEDD2;
+  border-radius:25px;
+}
+
+.workGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 350px 350px 350px;
+  grid-template-areas:
+
+    "img1 content1"
+    "img2 content2"
+    "img3 content3"
+  ;
+}
+
+.workGrid img {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: block;
+  object-fit:contain;
+}
+
+.img1 {
+  grid-area: img1;
+}
+
+.img2 {
+  grid-area: img2;
+}
+
+.img3 {
+  grid-area: img3;
+}
+
+.img1,
+.img2,
+.img3,
+.content1,
+.content2,
+.content3 {
+  padding: 80px;
+}
+
+.content1 {
+  grid-area: content1;
+}
+
+.content2 {
+  grid-area: content2;
+}
+
+.content3 {
+  grid-area: content3;
+}
+
+@media screen and (max-width: 480px) {
+  .workGrid {
+
+    grid-template-rows: 350px 350px 350px 350px 350px;
+    grid-template-columns: 50%;
+    grid-template-areas:
+      "img1 content1"
+      "img2 content2"
+      "img3 content3"
+    ;
+  }
+
+  .workGrid img {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .img1 {
+    grid-area: img1;
+  }
+
+  .img2 {
+    grid-area: img2;
+  }
+
+  .img3 {
+    grid-area: img3;
+  }
+
+  .img1,
+  .img2,
+  .img3,
+  .content1,
+  .content2,
+  .content3 {
+    padding: 80px;
+  }
+
+  .content1 {
+    grid-area: content1;
+  }
+
+  .content2 {
+    grid-area: content2;
+  }
+
+  .content3 {
+    grid-area: content3;
+  }
+
+
+}
+.bubble-btn {
+  background-color: #162114;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 20px 40px;
+  font-size: 16px;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.bubble-btn:hover {
+  animation: bubble 0.4s ease-out;
+}
+
+@keyframes bubble {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
